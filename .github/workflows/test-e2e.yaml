@@ -23,7 +23,7 @@ jobs:
       - name: Start website, backend, etc
         run: docker compose --profile ci up --build -d
       - name: Run Cypress tests
-        uses: cypress-io/github-action@v5.7.1
+        uses: cypress-io/github-action@v5.8.3
         with:
           browser: chrome
           working-directory: website
